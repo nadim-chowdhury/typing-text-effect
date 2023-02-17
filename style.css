@@ -1,0 +1,23 @@
+body {
+  background-color: cornsilk;
+  text-align: center;
+  margin-top: 80px;
+}
+
+h1::after {
+  content: "";
+  border-right: 2px solid black;
+  position: relative;
+  left: 10px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
